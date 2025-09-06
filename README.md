@@ -1,6 +1,7 @@
 <h2> Stable Diffusion DDPM from Scratch</h2>
 
 In this notebook i implemented a Denoising Diffusion Probabilistic Model (DDPM) from scratch using PyTorch for unconditional image generation.
+My main purpose here is to learn the architecture of behind stable-diffusion and code it from scratch to gain a good understanding.
 
 <h3>Overview</h3>
 
