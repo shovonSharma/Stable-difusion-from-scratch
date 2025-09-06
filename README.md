@@ -1,11 +1,6 @@
+<h2> Stable Diffusion DDPM from Scratch</h2>
 
-
-
-<h2> Stable Diffusion DDPM from Scratch![Python](https://img.shields.io/badge/Python-3.8+-blue.svg) </h2>
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg) 
-![License](https://img.shields.io/badge/License-MIT-green.svg) (LICENSE)
-
-Implementation of a Denoising Diffusion Probabilistic Model (DDPM) from scratch using PyTorch for unconditional image generation.
+In this notebook i implemented a Denoising Diffusion Probabilistic Model (DDPM) from scratch using PyTorch for unconditional image generation.
 
 <h3>Overview</h3>
 
