@@ -13,6 +13,6 @@ This project builds a DDPM to generate images from noise using an attention-base
 -Debugging noisy outputs via loss analysis and intermediate visualizations.
 
 <h3>Forward-Diffusion</h3>
-![Forward Diffusion Process](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/forward-pass.jpg)
+![](filename%20https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/forward-pass.jpg)
 
 I discussed the math behind Stable Diffusion [here](https://medium.com/@shovonsharma/the-math-behind-stable-diffusion-232ac2f9f263).
