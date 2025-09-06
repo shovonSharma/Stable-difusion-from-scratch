@@ -12,7 +12,7 @@ This project builds a DDPM to generate images from noise using an attention-base
 -Training with AdamW optimizer and MSE loss.
 -Debugging noisy outputs via loss analysis and intermediate visualizations.
 
-Forward-Diffusion
-![alt text]([http://url/to/img.png](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/forward-pass.jpg))
+<h3>Forward-Diffusion</h3>
+![Forward Diffusion Process](https://raw.githubusercontent.com/shovonSharma/Stable-difusion-from-scratch/main/forward-pass.jpg)
 
-I discussed the math behind stable diffusion <a href="[url](https://medium.com/@shovonsharma/the-math-behind-stable-diffusion-232ac2f9f263)">here</a>.
+I discussed the math behind Stable Diffusion [here](https://medium.com/@shovonsharma/the-math-behind-stable-diffusion-232ac2f9f263).
