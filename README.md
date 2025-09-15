@@ -70,5 +70,11 @@ Proper initialization and normalization prevent mode collapse
 
 ### Loss curve
 
-![VAE_trainloss](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/VAE_trainloss.jpg) ![DDPM_trainloss](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/DDPM_trainloss.jpg)
+<table>
+  <tr>
+    <td><img src="https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/VAE_trainloss.jpg" width="300"/></td>
+    <td><img src="https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/DDPM_trainloss.jpg"/></td>
+  </tr>
+</table>
+
 
