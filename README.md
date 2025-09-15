@@ -18,21 +18,29 @@ Implemented proper noise scheduling, DDPM posterior calculations, and reparamete
 ## 🏗️ Architecture
 ### 1. Variational Autoencoder (VAE)
 **Purpose**: Compress 64×64 images to 8×8 latent representations.
+
 **Architecture**: Convolutional encoder-decoder with reparameterization trick.
+
 **Key Advantage**: Spatial latent encoding for better reconstruction and noise generation.
 
 mu, logvar = self.encode(x)  # (B, 4, 8, 8) spatial latents
 z = self.reparameterize(mu, logvar)
 
+
 ### 2. Attention-Enhanced U-Net
 **Multi-scale Processing**: Down/up sampling with skip connections.
+
 **Self-Attention Blocks**: Spatial attention for global context modeling.
+
 **Time Conditioning**: Sinusoidal time embeddings integrated at each layer.
+
 **Residual Design**: GroupNorm + SiLU activation for stable training.
 
 ### 3. DDPM Sampler
 **Forward Process**: Systematic noise addition with learned β schedule.
+
 **Reverse Process**: Learned denoising with proper variance calculation.
+
 **Mathematical Foundation**: Implements full DDPM posterior derivatio.
 
 ##  Mathematical Implementation
@@ -44,7 +52,7 @@ z = self.reparameterize(mu, logvar)
 q(x_t | x_0) = N(√ᾱ_t · x_0, (1-ᾱ_t)I)
 #### Reverse Process (p_θ)
 p_θ(x_{t-1} | x_t) = N(μ_θ(x_t,t), Σ_θ(x_t,t))
-<h3>Overview</h3>
+
 
 ## Training Efficiency
 
