@@ -17,23 +17,23 @@ Implemented proper noise scheduling, DDPM posterior calculations, and reparamete
 
 ## 🏗️ Architecture
 ### 1. Variational Autoencoder (VAE)
-<u>Purpose</u>: Compress 64×64 images to 8×8 latent representations.
-<u>Architecture</u>: Convolutional encoder-decoder with reparameterization trick.
-<u>Key Advantage</u>: Spatial latent encoding for better reconstruction and noise generation.
+**Purpose**: Compress 64×64 images to 8×8 latent representations.
+**Architecture**: Convolutional encoder-decoder with reparameterization trick.
+**Key Advantage**: Spatial latent encoding for better reconstruction and noise generation.
 
 mu, logvar = self.encode(x)  # (B, 4, 8, 8) spatial latents
 z = self.reparameterize(mu, logvar)
 
 ### 2. Attention-Enhanced U-Net
-<u>Multi-scale Processing</u>: Down/up sampling with skip connections.
-<u>Self-Attention Blocks</u>: Spatial attention for global context modeling.
-<u>Time Conditioning</u>: Sinusoidal time embeddings integrated at each layer.
-<u>Residual Design</u>: GroupNorm + SiLU activation for stable training.
+**Multi-scale Processing**: Down/up sampling with skip connections.
+**Self-Attention Blocks**: Spatial attention for global context modeling.
+**Time Conditioning**: Sinusoidal time embeddings integrated at each layer.
+**Residual Design**: GroupNorm + SiLU activation for stable training.
 
 ### 3. DDPM Sampler
-<u>Forward Process</u>: Systematic noise addition with learned β schedule.
-<u>Reverse Process</u>: Learned denoising with proper variance calculation.
-<u>Mathematical Foundation</u>: Implements full DDPM posterior derivatio.
+**Forward Process**: Systematic noise addition with learned β schedule.
+**Reverse Process**: Learned denoising with proper variance calculation.
+**Mathematical Foundation**: Implements full DDPM posterior derivatio.
 
 ##  Mathematical Implementation
 #### Noise Scheduling:
