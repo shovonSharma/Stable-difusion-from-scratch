@@ -23,9 +23,11 @@ Implemented proper noise scheduling, DDPM posterior calculations, and reparamete
 
 **Key Advantage**: Spatial latent encoding for better reconstruction and noise generation.
 
+```bash
 mu, logvar = self.encode(x)  # (B, 4, 8, 8) spatial latents
-z = self.reparameterize(mu, logvar)
 
+z = self.reparameterize(mu, logvar)
+```
 
 ### 2. Attention-Enhanced U-Net
 **Multi-scale Processing**: Down/up sampling with skip connections.
@@ -45,14 +47,21 @@ z = self.reparameterize(mu, logvar)
 
 ##  Mathematical Implementation
 #### Noise Scheduling:
+```bash
 β_t = linear_schedule(β_start=1e-4, β_end=0.02, T=1000) # Linear β schedule for T timesteps
-α_t = 1 - β_t
-ᾱ_t = ∏(α_s) for s=1 to t
-#### Forward Process (q):
-q(x_t | x_0) = N(√ᾱ_t · x_0, (1-ᾱ_t)I)
-#### Reverse Process (p_θ)
-p_θ(x_{t-1} | x_t) = N(μ_θ(x_t,t), Σ_θ(x_t,t))
 
+α_t = 1 - β_t
+
+ᾱ_t = ∏(α_s) for s=1 to t
+```
+#### Forward Process (q):
+```bash
+q(x_t | x_0) = N(√ᾱ_t · x_0, (1-ᾱ_t)I)
+```
+#### Reverse Process (p_θ)
+```bash
+p_θ(x_{t-1} | x_t) = N(μ_θ(x_t,t), Σ_θ(x_t,t))
+```
 
 ## Training Efficiency
 
