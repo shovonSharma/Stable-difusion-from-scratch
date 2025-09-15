@@ -2,6 +2,7 @@
 
 In this notebook, I built a Denoising Diffusion Probabilistic Model (DDPM) completely from the ground-up using PyTorch, focusing on unconditional image generation.
 My goal was to deeply understand the mathematics and architecture behind Stable Diffusion, including its latent-space compression via a Convolutional Variational Autoencoder (VAE) and attention-enhanced U-Net denoiser.
+
 I discussed the math behind Stable Diffusion [here](https://medium.com/@shovonsharma/the-math-behind-stable-diffusion-232ac2f9f263).
 
 ## Key Achievements
@@ -68,7 +69,6 @@ Proper initialization and normalization prevent mode collapse
 ![ddpm5](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/ddpm5.jpg)
 
 ### Loss curve
-![VAE_trainloss](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/VAE_trainloss.jpg)
-![DDPM_trainloss](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/DDPM_trainloss.jpg)
 
+![VAE_trainloss](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/VAE_trainloss.jpg) ![DDPM_trainloss](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/DDPM_trainloss.jpg)
 
