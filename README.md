@@ -69,12 +69,5 @@ Proper initialization and normalization prevent mode collapse
 ![ddpm5](https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/ddpm5.jpg)
 
 ### Loss curve
-
-<table>
-  <tr>
-    <td><img src="https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/VAE_trainloss.jpg" width="300"/></td>
-    <td><img src="https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/DDPM_trainloss.jpg"/></td>
-  </tr>
-</table>
-
-
+|:--------:|:--------------:|
+| <img src="https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/VAE_trainloss.jpg" width="200"/> | <img src="https://github.com/shovonSharma/Stable-difusion-from-scratch/blob/main/VAE_trainloss.jpg" width="200"/> |
